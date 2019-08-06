@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Bloc.io Coding Interview Challenge
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+This is a simple application built for Bloc's coding challenge interview prep assignment. With a 90 minute time limit, the instructions were to build an application that allows users to post to a wall and read other comments posted on the wall.
 
-### `npm start`
+You can view the live application [here](https://jessicajades-the-wall.herokuapp.com/)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Build Process
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+I built this project using React and `create-react-app`. I knew this would help me save time and maximize my time spent working on the code. I chose to make this a true SPA with no React Router for that same reason.
 
-### `npm test`
+The database and authentication was set-up through Firebase. It allows users to sign in with their Google credentials, and post comments to the wall once signed in. I did not have the time to build out the back-end in this project, although I have built a full-stack Node application that you can find [here](https://github.com/jessicajades/blocipedia-node).
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I finished up all functionality in the 90 minute time limit, although I did go back after the fact and update the styling. I could have used Bootstrap, but I wanted something a little more eye-catching and memorable.
 
-### `npm run build`
+## Tech
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   React
+-   Firebase
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Improvements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In the interest of time, I chose to put all functionality in the main App component. The first improvement I would make with more time would be to break the app down into smaller components. I would add a user component and a comment list component at a minimum.
 
-### `npm run eject`
+Another feature I would like to add is edit and delete buttons, so that comments can be modified after they are added to the wall.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+git clone git@github.com:jessicajades/the-wall.git the-wall \
+cd the-wall
+npm install
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Author
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Jessica Shepherd is a full-stack web developer currently based in Phoenix, AZ. Where you can find her:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+-   [jessicajade.dev](https://jessicajade.dev/)
+-   [jessicajadecodes@gmail.com](mailto:jessicajadecodes@gmail.com)
+-   [twitter.com/javascript_jess](https://twitter.com/javascript_jess)
+-   [github.com/jessicajades](https://github.com/jessicajades)
