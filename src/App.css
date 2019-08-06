@@ -1,33 +1,108 @@
-.App {
-  text-align: center;
+body {
+    background-image: linear-gradient(#bc4e9c, #f80759);
+    margin: 0px;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    background-attachment: fixed;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+div #App {
+    display: flex;
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+div#comment {
+    margin: 2px;
+    background-color: #fff0f2;
+    color: #b01c84;
+    overflow-wrap: break-word;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+div#box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 10px 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p#content {
+    margin: 2px;
+}
+
+p#sentBy {
+    margin: 2px;
+}
+
+h3 {
+    color: #fff0f2;
+    margin: 20px 0 5px 40px;
+    font-family: "Cutive Mono", monospace;
+    font-size: 40px;
+}
+
+.category {
+    font-weight: bold;
+    color: #e03075;
+}
+
+.userBtn {
+    align-self: center;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Cutive Mono", monospace;
+    background-color: #fff0f2;
+    border: none;
+    color: #b01c84;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.userBtn:hover {
+    cursor: pointer;
+    background-color: #ee1f64;
+    color: #fff0f2;
+}
+
+#comment-form {
+    align-self: center;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+}
+
+input#commentInput {
+    width: 200px;
+    height: 40px;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: #fff0f2;
+    color: #b01c84;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 4px;
+}
+
+input#commentInput::placeholder {
+    color: #b01c84;
+}
+
+button#submit {
+    height: 46px;
+    margin: 0;
+    margin-left: 5px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: #fff0f2;
+    color: #b01c84;
+}
+
+button#submit:hover {
+    cursor: pointer;
 }

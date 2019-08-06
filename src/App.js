@@ -69,36 +69,56 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="App">
-                {console.log("state", this.state)}
-                <p>hello</p>
-                {this.state.comments.map(comment => {
-                    return (
-                        <div key={comment.key}>
-                            <p>Comment: {comment.content}</p>
-                            <p>Sent by: {comment.username}</p>
-                        </div>
-                    );
-                })}
+            <div id="App">
+                <h3>Welcome to the wall....</h3>
+                <div id="box">
+                    {this.state.comments.map(comment => {
+                        return (
+                            <div key={comment.key} id="comment">
+                                <div id="commentText">
+                                    <p id="content">
+                                        <span className="category">
+                                            Comment:
+                                        </span>{" "}
+                                        {comment.content}
+                                    </p>
+                                    <p id="sentBy">
+                                        <span className="category">
+                                            Sent by:
+                                        </span>{" "}
+                                        {comment.username}
+                                    </p>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
 
                 {this.state.user !== null ? (
-                    <form onSubmit={e => this.createComment(e)}>
+                    <form
+                        onSubmit={e => this.createComment(e)}
+                        id="comment-form"
+                    >
                         <input
                             type="text"
                             id="commentInput"
                             placeholder="Enter new comment"
                             onChange={e => this.handleChange(e)}
                         />
-                        <input type="submit" value="Submit" />
+                        <button type="submit" value="Submit" id="submit">
+                            Submit
+                        </button>
                     </form>
                 ) : (
                     ""
                 )}
 
                 {this.state.user !== null ? (
-                    <button onClick={this.signOut}>Sign Out</button>
+                    <button onClick={this.signOut} className="userBtn">
+                        Sign Out
+                    </button>
                 ) : (
-                    <button onClick={this.signIn}>
+                    <button onClick={this.signIn} className="userBtn">
                         Sign in to add comments
                     </button>
                 )}
