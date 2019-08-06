@@ -17,7 +17,7 @@ I finished up all functionality in the 90 minute time limit, although I did go b
 ## Tech
 
 -   React
--   Firebase
+-   Firebase (database and authentication)
 
 ## Improvements
 
