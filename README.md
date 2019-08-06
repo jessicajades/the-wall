@@ -28,7 +28,7 @@ Another feature I would like to add is edit and delete buttons, so that comments
 ## Install
 
 ```
-git clone git@github.com:jessicajades/the-wall.git the-wall \
+git clone git@github.com:jessicajades/the-wall.git the-wall
 cd the-wall
 npm install
 npm start
